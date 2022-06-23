@@ -14,6 +14,9 @@ body{
     color:whitesmoke;
     background-color: #1F2A44;
 }
+.row-content{
+    padding: 0px 0px 200px 0px;
+}
 
 .text{
     font-weight: 100;
@@ -29,6 +32,11 @@ body{
 .name{
     font-weight: 900;
     color:#49C5B1;
+}
+
+.extra{
+    color: floralwhite;
+    font-weight: 500;
 }
 
 .greeting{
@@ -52,7 +60,4 @@ html {
     padding: 0;
 }
 
-.extra{
-    color: floralwhite;
-    font-weight: 500;
-}
+
