@@ -1,12 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/apercu');
 
-.landing{
-    background-color: #1F2A44;
-    height: 100vh;
-    width: 100vw;
-    position:relative;
-}
-
 body{
     padding-top: 55px;
     z-index:0;
@@ -17,8 +10,31 @@ body{
     background-color: #1F2A44;
     overflow-x:hidden;
 }
+
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+.landing{
+    background-color: #1F2A44;
+    height: 100vh;
+    width: 100vw;
+    position:relative;
+}
+
+.navbar-dark{
+    background-color:#384967;
+}
+
 .row-content{
     padding: 0px 0px 200px 0px;
+}
+
+footer{
+    padding: 30px 0px;
+
 }
 
 .text{
@@ -50,20 +66,23 @@ body{
     margin-right:20%;
 }
 
-.navbar-dark{
-    background-color:#384967;
-}
-
 .box-test{
     border: 5px green ridge;
 }
 
-html {
-    scroll-behavior: smooth;
-    margin: 0;
-    padding: 0;
+#top-btn {
+    display:none;
+    font-size:30px;
+    cursor:pointer;
+    right: 5%;
+    bottom: 2%;
 }
 
+.top-area{
+    position:fixed;
+    bottom:0;
+    z-index:50;
+}
 
 @media (max-width: 400px){
     h1 {font-size:1.75rem;} 
