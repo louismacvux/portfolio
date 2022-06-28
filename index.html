@@ -43,7 +43,8 @@
     
         <div class="landing">
             <div class="greeting">
-                <h1 class="text-white text">Hello, my name is <span class="name">Long Vu</span>,</h1>
+                <h1 class="text-white text">Hello &#128075</h1>
+                <h1 class="text-white text">my name is <span class="name">Long Vu</span>,</h1>
                 <h1 class="text-white text">I'm a software engineer.</h1>
                 <h5 class="text">I love to create products that people enjoy.</h5>
                 <h5 class="text">Learn more about my journey below.</h5>
@@ -141,6 +142,9 @@
                     </div>
                 </div>
             </div>
+            <div class="mt-4 d-flex justify-content-center">
+                <p>Designed by Long Vu, 2022</p>
+            </div>
         </footer>
         <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
         <!-- <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
@@ -173,6 +177,11 @@
                 $('#top-btn').click(function(){
                     $(document).scrollTop(0);
                 })
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $('.greeting').fadeIn(2000);
             });
         </script>
     </body>
