@@ -37,6 +37,28 @@ footer a:hover{
     color:#49C5B1;
 }
 
+.carousel-indicators{
+    bottom: -2.7rem;
+}
+
+.carousel-indicators li {
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+.carousel-item img{
+    border-radius: 3%;
+}
+
+.tag{
+    border: 3px ridge #49C5B1;
+    color: #49C5B1;
+    font-weight:500;
+    padding: 0rem 0.2rem;
+    margin: 1.8rem .2rem 0rem .2rem;
+}
+
 .text{
     font-weight: 300;
     color:#A2B2C8;
@@ -61,7 +83,7 @@ footer a:hover{
 
 .greeting{
     position: relative;
-    top: 35%;
+    top: 30%;
     left: 15%;
     margin-right:20%;
     display:none;
@@ -79,10 +101,21 @@ footer a:hover{
     bottom: 2%;
 }
 
+#top-btn:hover{
+    transform: translate(0px, -5px);
+}
+
 .top-area{
     position:fixed;
     bottom:0;
     z-index:50;
+}
+
+/* for small screen only */
+@media screen and (max-height:500px){
+    .greeting{
+        top:20%;
+    }
 }
 
 @media (max-width: 400px){
@@ -91,6 +124,9 @@ footer a:hover{
 }
 @media (min-width: 400px) {  
     h1 {font-size:2rem}
+}
+@media (max-width:750px){
+    .sub-heading {letter-spacing: 0.10rem;}
 }
 @media (min-width: 800){
     h1 {font-size:3rem}
