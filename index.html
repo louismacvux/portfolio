@@ -22,17 +22,21 @@
                 <div class="collapse navbar-collapse" id="naving">
                     <ul class="navbar-nav ml-4 mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#Background" >About</a>
+                            <a id="background_" class="nav-link" href="#Background" >About</a>
                         </li>
                         <li class="navbar-nav">
-                            <a class="nav-link" href="#Skills">Skills</a>
+                            <a id="skills_" class="nav-link" href="#Skills">Skills</a>
                         </li>
                         <li class="navbar-nav">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a id="projects_" class="nav-link" href="#Projects">Projects</a>
                         </li>
                         <li class="navbar-nav">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a id="contact_" class="nav-link" href="#Contact">Contact</a>
                         </li>
+                        <li class="navbar-nav">
+                            <a class="nav-link" href="pdf/resume.pdf">Resume</a>
+                        </li>
+
                     </ul>
                 </div>
             </div>
@@ -43,7 +47,7 @@
                 <h1 class="text-white text">Hello &#128075</h1>
                 <h1 class="text-white text">my name is <span class="name">Long Vu</span>,</h1>
                 <h1 class="text-white text">I'm a software engineer.</h1>
-                <h5 class="text">I love to create products that people enjoy.</h5>
+                <h5 class="text">I love to be creative and make things people enjoy.</h5>
                 <h5 class="text">Learn more about my journey below.</h5>
             </div>
         </div>
@@ -110,7 +114,7 @@
                     <div class="col-12 col-sm-3 d-flex justify-content-sm-end justify-content-start pr-5">
                         <p class="sub-heading">Projects</p>
                     </div>
-                    <div class="col-sm-9 offset-1 offset-sm-0">
+                    <div class="col-sm-9 offset-1 offset-sm-0 pl-3">
                         <a class="text-uppercase extra" href="https://github.com/gurtejboparai/bookwyrm" target="_blank">Book Wyrm</a>
                         <div class="container navbar-dark mt-3">
                             <div class="row">
@@ -159,7 +163,7 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="text-uppercase extra">Thrive</p>
+                        <p class="text-uppercase extra d-none">Thrive</p>
                         <div class="container">
                             <div class="row">
                                 <div class="col-3">
@@ -170,10 +174,7 @@
                                 </div>
                             </div>
                         </div>
-
-                        
                     </div>
-
                 </div>
             </div>
         </div>
@@ -184,7 +185,7 @@
                     <div class="col-12 col-sm-3 d-flex justify-content-sm-end justify-content-start pr-5">
                         <p class="sub-heading">Education</p>
                     </div>
-                    <div class="col-sm-9 offset-1 offset-sm-0">
+                    <div class="col-sm-9 offset-1 offset-sm-0 pl-3">
                         <ul class="list-unstyled text">
                             <li class="text-uppercase extra">University of Manitoba</li>
                             <li>B. Science, Computer Science</li>
@@ -197,13 +198,16 @@
                             <li>2018-2019</li>
                         </ul>
                     </div>
-
                 </div>
             </div>
         </div>
+        <div class="resume d-flex justify-content-center" style="margin:-90px 0px 150px 0px">
+            <a class="resume" href="pdf/resume.pdf" target="_blank"><h5>get my resume</h5></a>
+        </div>
+
         <div class="top-area" id="top-btn">&#9195</div>
 
-        <footer class="">
+        <footer id="Contact">
             <div class="container">
                 <div class="row">
                     <div class="d-flex justify-content-center offset-2 col-2">
@@ -258,7 +262,7 @@
         <script>
             $(document).scroll(function(){
                 var offset = $(this).scrollTop();
-                if (offset > 500){
+                if (offset > 1500){
                     $('#q').fadeIn();
                     $('#top-btn').fadeIn();
                 }else{
@@ -277,6 +281,15 @@
         <script>
             $(document).ready(function(){
                 $('.greeting').fadeIn(2000);
+            });
+        </script>
+        <script>
+            $(document).ready(function(){
+                $("#projects_").click(function() {
+                    $('html, body').animate({
+                    scrollTop: $("#Projects").offset().top
+                    }, 1000);
+                });
             });
         </script>
     </body>

@@ -72,7 +72,11 @@ footer a:hover{
     font-weight:700;
     letter-spacing: 0.20rem;
 }
-
+.resume{
+    color:floralwhite;
+    text-transform: uppercase;
+    font-weight:700;
+}
 .name{
     font-weight: 700;
     color:#49C5B1;
