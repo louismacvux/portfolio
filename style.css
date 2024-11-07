@@ -148,7 +148,7 @@ body.darkmode #bio {
     gap: 1%;
 }
 
-.card .image {
+.card .image, .image-stack {
     flex-basis: 40%;
     margin-left:auto;
 }
@@ -161,6 +161,39 @@ body.darkmode #bio {
 
 .card .image img {
     width: 500px;
+}
+
+.image-stack {
+    display: grid;
+    grid-template-rows: 260px;
+    grid-template-columns: repeat(4,minmax(100px,100px));
+    padding: 30px 10px;
+}
+
+.mockup {
+    width: 130px;
+    margin-left: 15px;
+}
+
+/* Apply decreasing margins for each subsequent image to create the stacking */
+.mockup:nth-child(1) {
+    margin-left: 0%;
+    z-index: 3;
+}
+
+.mockup:nth-child(2) {
+    margin-left: -10px;
+    z-index: 2;
+}
+
+.mockup:nth-child(3) {
+    margin-left: -20px;
+    z-index: 1;
+}
+
+.mockup:nth-child(4) {
+    margin-left: -30px;
+    z-index: 0;
 }
 
 .type {
@@ -235,7 +268,10 @@ body.darkmode #bio {
     .card .image img {
         width: 100%;
     }
-    #project-reverse {
+    .image-stack {
+        margin: 0 auto;
+    }
+    #project1, #project3{
         flex-direction: column-reverse;
     }
 }
