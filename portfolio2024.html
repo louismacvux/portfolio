@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio2024</title>
+    <link rel="stylesheet" href="portfolio2024.css">
+    <script src="https://kit.fontawesome.com/2b9cdc1c9a.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+</head>
+<body id="body">
+    <div class="nv">
+        <div class="nav-pill">
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+            <div style="border-left: 2px solid rgb(255, 255, 255); display: inline; margin: 0 10px;"></div>
+            <a href="https://github.com/louismacvux" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github fa-lg"></i></a>
+            <a onClick="toggle()" id="theme-btn"><i id="theme-icon" class="fa-solid fa-circle-half-stroke fa-lg"></i></a>
+        </div>
+        <div class="gradient-blur">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="title">
+            <img src="favicon_io/android-chrome-192x192.png" alt="logo" width="32">
+            <h5 style="display: inline-block;"> Minh Long Vu</h5>
+        </div>
+        <div class="hero">
+            <h1>Hello, I am <p id="name">Minh Long Vu</p>.</h1>
+            <h1>I create web apps that make everyday tasks easier.</h1>
+            <span id="bio">I specialize in building dynamic, user-friendly applications, focusing on delivering seamless experiences that bring ideas to life.</span>
+        </div>
+    </div>
+    <div class="cta">
+        <div class="link">
+            <a href="#contact">
+                <div class="btn">Let's talk --> </div>
+            </a>
+        </div>
+    </div>
+    <div class="card " id="skills">
+        <div class="title">Skills</div>
+        <p class="info">Here are some of the technologies I have used</p>
+        <div class="skill-icons">
+            <img height="40" width="40" src="https://cdn.simpleicons.org/javascript"/>
+            <img height="40" width="40" src="https://user-images.githubusercontent.com/25181517/183423507-c056a6f9-1ba8-4312-a350-19bcbc5a8697.png" />
+            <img height="40" width="40" src="https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png" />
+            <img height="40" width="40" src="https://cdn.simpleicons.org/html5" />
+            <img height="40" width="40" src="https://cdn.simpleicons.org/css3" />
+            <img height="40" width="40" src="https://cdn.simpleicons.org/mongodb" />
+            <img height="40" width="40" src="https://cdn.simpleicons.org/nodedotjs" />
+            <img height="40" width="40" src="https://cdn.simpleicons.org/react" />
+            <img height="40" width="40" src="https://user-images.githubusercontent.com/25181517/183859966-a3462d8d-1bc7-4880-b353-e2cbed900ed6.png"/>
+            <img height="40" width="40" src="https://cdn.simpleicons.org/springboot" />
+            <img height="40" width="40" src="https://user-images.githubusercontent.com/25181517/192108372-f71d70ac-7ae6-4c0d-8395-51d8870c2ef0.png"/>
+            <img height="40" width="40" src="https://user-images.githubusercontent.com/25181517/189715289-df3ee512-6eca-463f-a0f4-c10d94a06b2f.png" />
+        </div>
+    </div>
+    <div class="card" id="project">
+        <div class="image">
+            <img src="asset/notebinder1.png" alt="notebinder1">
+        </div>
+        <div class="info">
+            <div class="type">PERSONAL PROJECT</div>
+            <div class="title">
+                <div>NoteBinder</div>
+            </div>
+            <ul class="about">
+                <li><strong>Your go-to platform for organized note-taking</strong> — capture and structure ideas effortlessly.</li>
+                <li><strong>Style your notes with Markdown</strong> for a clean, readable format.</li>
+                <li><strong>User-friendly interface</strong> designed for easy access and productivity.</li>
+                <li><strong>Keep your thoughts organized and accessible</strong> whenever you need them.</li>
+                <li><strong>Stay focused and efficient</strong> with a streamlined note-taking experience.</li>
+            </ul>
+
+            <div class="tech">
+                <div class="tech-btn">JavaScript</div>
+                <div class="tech-btn">ReactJS</div>
+                <div class="tech-btn">NodeJS</div>
+                <div class="tech-btn">ExpressJS</div>
+                <div class="tech-btn">MongoDB</div>
+            </div>
+            <div class="link">
+                <a href="https://notebinder.vercel.app/" target="_blank" rel="noopener noreferrer"><div class="btn"><i class="fa-solid fa-globe"></i> Go to Website</div></a>
+                <a href="https://github.com/louismacvux/Blog-MERN" target="_blank" rel="noopener noreferrer"><div class="btn"><i class="fa-solid fa-code-branch"></i> GitHub</div></a>
+            </div>
+        </div>
+    </div>
+    <div class="card" id="project-reverse">
+        <div class="info">
+            <div class="type">GROUP PROJECT</div>
+            <div class="title">
+                <div>BookWyrm</div>
+            </div>
+            <ul class="about">
+                <li><strong>Your new book-loving companion</strong> — perfect for discovering and discussing books.</li>
+                <li><strong>Explore popular reads</strong> and get insights from fellow readers.</li>
+                <li><strong>Write reviews and rate books</strong> by genre to help others choose wisely.</li>
+                <li><strong>Join discussions</strong> by reading and replying to other reviews.</li>
+                <li><strong>Easily add new books</strong> — enter an ISBN, and BookWyrm fills in the details!</li>
+            </ul>
+
+            <div class="tech">
+                <div class="tech-btn">Java</div>
+                <div class="tech-btn">SpringBoot</div>
+                <div class="tech-btn">VueJS</div>
+                <div class="tech-btn">Google Books API</div>
+                <div class="tech-btn">MongoDB</div>
+            </div>
+            <div class="link">
+                <a href="https://notebinder.vercel.app/" target="_blank" rel="noopener noreferrer"><div class="btn"><i class="fa-solid fa-globe"></i> Go to Website</div></a>
+                <a href="https://github.com/louismacvux/Blog-MERN" target="_blank" rel="noopener noreferrer"><div class="btn"><i class="fa-solid fa-code-branch"></i> GitHub</div></a>
+            </div>
+        </div>
+        <div class="image">
+            <img src="asset/bookwyrm.png" alt="bookwyrm">
+        </div>
+    </div>
+    <div class="card" id="project">
+        <div class="image">
+            <img src="https://fakeimg.pl/400x300?font=bebas" /></div>
+        <div class="info">
+            <div class="title">Project 3</div>
+        </div>
+    </div>
+    <div class="card" id="education">
+        <div class="title">Education</div>
+        <div class="info">
+            <p>
+                Currently I am pursuing <strong>Mobile Application Diploma</strong> at <strong>University of Winnipeg</strong>.
+            </p>
+            <p>
+                I have a <strong>Science Bachelor Degree</strong> at <strong>University of Manitoba</strong>, majoring in <strong>Computer Science</strong>.
+            </p>
+        </div>
+    </div>
+    <div class="card " id="contact">
+        <div class="title">Contact</div>
+        <div class="info">
+            <p>My inbox is always open for new opportunities. Please send me an email and I would get back to you!</p>
+            <div class="cta">
+                <div class="link" id="email">
+                    <a href="mailto:minhlong9696@gmail.com">
+                        <div class="btn"><i class="fa-regular fa-paper-plane"></i> Say Hello</i></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p id="foot">Designed by Minh Long Vu, 2024</p>
+    <div style="height: 100px;"></div>
+</body>
+<script>
+    const body = document.body;
+    const btn = document.getElementById("theme-icon");
+
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            toggle();
+        });
+    
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches){
+        toggle();
+    }
+
+    function toggle(){
+        body.classList.toggle("darkmode");
+        btn.classList.toggle("fa-flip-horizontal");
+    }
+</script>
+</html>
