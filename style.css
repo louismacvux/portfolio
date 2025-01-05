@@ -67,7 +67,7 @@ a {
     left: 0;
     right: 0;
     background-color: var(--color-link-btn);
-    padding: 10px 20px;
+    padding: 10px 15px;
     border-radius: 30px;
     z-index: 9;
 }
