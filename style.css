@@ -170,7 +170,7 @@ body.darkmode #bio {
 .image-stack {
     display: grid;
     grid-template-rows: 260px;
-    grid-template-columns: repeat(4, minmax(30px, 120px));
+    grid-template-columns: repeat(4, minmax(30px, 130px));
     padding: 30px 5px;
 }
 
