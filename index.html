@@ -20,7 +20,7 @@
             <div style="border-left: 2px solid rgb(255, 255, 255); display: inline; margin: 0 10px;"></div>
             <a href="https://github.com/louismacvux" target="_blank" rel="noopener noreferrer">
                 <i class="fa-brands fa-github fa-lg"></i></a>
-            <a onClick="toggle()" id="theme-btn"><i id="theme-icon" class="fa-solid fa-circle-half-stroke fa-lg"></i></a>
+            <a onClick="toggle()" id="theme-btn" title="Dark Mode"><i id="theme-icon" class="fa-solid fa-lg fa-moon"></i></a>
         </div>
         <div class="gradient-blur">
             <div></div>
@@ -87,7 +87,7 @@
             </div>
             <div class="link">
                 <a href="https://www.figma.com/proto/zgqnVRhYOGMpPnZHlGY7Zd/Exposure?node-id=80-210&node-type=frame&t=6srJmTvTlOFO7yce-1&scaling=scale-down&content-scaling=fixed&page-id=15%3A706&starting-point-node-id=80%3A210" target="_blank" rel="noopener noreferrer">
-                    <div class="btn"><i class="fa-solid fa-mobile-screen"></i> Go to Prototype</div>
+                    <div class="btn"><i class="fa-brands fa-figma"></i> Go to Prototype</div>
                 </a>
             </div>
         </div>
@@ -188,7 +188,8 @@
 </body>
 <script>
     const body = document.body;
-    const btn = document.getElementById("theme-icon");
+    const icon = document.getElementById("theme-icon");
+    const btn = document.getElementById("theme-btn");
 
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
             toggle();
@@ -200,7 +201,20 @@
 
     function toggle(){
         body.classList.toggle("darkmode");
-        btn.classList.toggle("fa-flip-horizontal");
+        var text = btn.title;
+        switch (text) {
+            case "Light Mode":
+                icon.classList.remove("fa-sun");
+                icon.classList.add("fa-moon");
+                btn.title = "Dark Mode";
+                break;
+            case "Dark Mode":
+                icon.classList.remove("fa-moon");
+                icon.classList.add("fa-sun");
+                btn.title = "Light Mode";
+                break;
+        }
+        
     }
 </script>
 </html>

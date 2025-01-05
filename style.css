@@ -65,7 +65,7 @@ a {
     left: 0;
     right: 0;
     background-color: var(--color-link-btn);
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 30px;
     z-index: 9;
 }
